@@ -1,43 +1,98 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>madeinathens.eth</title>
+    <title>madeinathens.eth | World's First IRL NFT Economy</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Smooth Scroll JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header (Μόνο Σημερινά) -->
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#mica">MiCA</a>
+        <a href="#physical">Physical</a>
+        <a href="#nfticket">NFTicket</a>
+        <a href="#curators">Curators</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="fade-in">
         <header class="main-header">
             <img src="https://chocolate-drunk-ant-774.mypinata.cloud/ipfs/bafkreifhljzj7e5jbvl4p7xdto2rnhe4mrqbmvziqqolzw6df7zdewshgi" 
                  alt="Logo" class="logo">
             <div class="header-titles">
                 <h1>WORLD'S FIRST</h1>
-                <p class="subtitle"> IRL & RWAs GENERATIVE ECONOMY</p>
+                <p class="subtitle">IRL & RWAs GENERATIVE ECONOMY</p>
                 <div class="highlight-box">
                     <p>© 12/13/14/15/16/17/18/19/20/21/22/23/24/25</p>
                 </div>
             </div>
         </header>
+    </section>
 
-        <!-- Νέα Section (Χθεσινά + Εικόνα) -->
-        <section class="past-section">
-            <h2>Your experience just leveled UP</h2>
-            <div class="past-content">
-                <p>Now you can SELL the drink you just enjoyed</p>
-                <img src="https://chocolate-drunk-ant-774.mypinata.cloud/ipfs/bafkreie3l3qybsxu5k6hcfgcmvlzi647ioqrrwgtsiyyqnbeaobzwe3wgy" 
-                     alt="BDC Ticket" class="ticket-image">
-            </div>
-            <a href="https://opensea.io/collection/burgermint/overview" class="button">
-                View on OpenSea
-            </a>
-        </section>
+    <!-- MiCA Section -->
+    <section id="mica" class="slide-up">
+        <img src="https://chocolate-drunk-ant-774.mypinata.cloud/ipfs/bafybeigvrpbgqzjcy4n2dc3oimyqr6ksp3oj5okhnlel53mlw3dpenxqke" 
+             alt="MiCA OG Image" class="og-image">
+        <div class="section-content">
+            <h2>Discover MiCA Compliance</h2>
+            <p>Ready to unlock the real power of blockchain & Web3.0?</p>
+            <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1114" class="button">Read MiCA</a>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>© 2012-2025 madeinathens.eth | Backed by World's 1st Gen3 Economy</p>
-        </footer>
-    </div>
+    <!-- Physical Section -->
+    <section id="physical" class="slide-up">
+        <img src="https://chocolate-drunk-ant-774.mypinata.cloud/ipfs/bafybeiawcy4b3kv343ol6jvlsepgc6wi7rubt73nr2d7opvgxh452msssa" 
+             alt="Physical OG Image" class="og-image">
+        <div class="section-content">
+            <h2>Physical Spot</h2>
+            <p>Your drink isn’t just a moment, it’s an asset</p>
+            <a href="https://opensea.io/collection/burgermint/overview" class="button">Visit</a>
+        </div>
+    </section>
+
+    <!-- NFTickets Section -->
+    <section id="physical" class="slide-up">
+        <img src="https://chocolate-drunk-ant-774.mypinata.cloud/ipfs/bafybeidatq5blefvgffjjvxyxlv7k23ggnyjhm7psm2fwfbgqbil3t4lfu" 
+             alt="Physical OG Image" class="og-image">
+        <div class="section-content">
+            <h2>NFTicket</h2>
+            <p>Now, your cash receipt is a commodity for trading.</p>
+            <a href="https://www.instagram.com/opta.apta/" class="button">Visit</a>
+        </div>
+    </section>
+
+ <!-- Curators Section -->
+    <section id="curators" class="slide-up">
+        <img src="https://chocolate-drunk-ant-774.mypinata.cloud/ipfs/bafybeihhk45lkylfmgba2racv6p4fiex6q5ir327kapfkjgvayb2cyjv2q" 
+             alt="Physical OG Image" class="og-image">
+        <div class="section-content">
+            <h2>Curators</h2>
+            <p>Authentic NFTs operate in the real economy inside businesses.</p>
+            <a href="https://app.dentity.com/makriyannis" class="button">Visit</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="fade-in">
+        <p>© 2012-2025 madeinathens.eth | Backed by World's 1st Gen3 Economy</p>
+        <p class="dev-credit">Developed with assistance from @DeepSeekChat</p>
+    </footer>
 </body>
 </html>
